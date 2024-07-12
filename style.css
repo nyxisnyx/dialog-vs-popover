@@ -1,0 +1,72 @@
+.first {
+    height: 50vh;
+    width: 50vw;
+    max-height: 50vh;
+    max-width: 50vw;
+    top: 25vh;
+    left: 25vw;
+    background-color: color-mix(in srgb, aqua 50%, transparent);
+}
+
+.second {
+    height: 50vh;
+    width: 50vw;
+    max-height: 50vh;
+    max-width: 50vw;
+    top: 25vh;
+    left: 25vw;
+    background-color: color-mix(in srgb, burlywood 50%, transparent);
+}
+
+.third {
+    height: 50vh;
+    width: 50vw;
+    max-height: 50vh;
+    max-width: 50vw;
+    background-color: color-mix(in srgb, darkkhaki 50%, transparent);
+}
+
+.fourth {
+    height: 50vh;
+    width: 50vw;
+    max-height: 50vh;
+    max-width: 50vw;
+    background-color: color-mix(in srgb, lightblue 50%, transparent);
+}
+
+.fifth {
+    height: 50vh;
+    width: 50vw;
+    max-height: 50vh;
+    max-width: 50vw;
+    background-color: color-mix(in srgb, mediumslateblue 50%, transparent);
+    color: white;
+}
+
+.sixth {
+    height: 50vh;
+    width: 50vw;
+    max-height: 50vh;
+    max-width: 50vw;
+    background-color: navy;
+    color: white;
+}
+
+.zIndex {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    color: white;
+    z-index: 90000000000000000;
+    position: absolute;
+    top: 50vh;
+    left: 45vw;
+    visibility: hidden;
+}
+
+#zIndexButton {
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+}
+

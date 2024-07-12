@@ -1,0 +1,29 @@
+# Dialog vs Popover
+## Definitions
+**Modal**: make the rest of the page non interactable
+
+**Non-modal**: rest of the page can be interacted with
+
+**Top layer**: Things in the top layer will be on top of all other content, regardless of z-index. Things in the top layer stacks with the older elements being displayed under newer elements
+
+## The APIs
+### Popover api
+- always non modal
+- always in the top layer
+- can be light dismissible  (e.g: closes when the user interact with anything outside of the popover element)
+- can be manual dismissible (e.g: close only when told to specifically)
+
+### Dialog element using the dialog api
+- modal if using showModal() to open, non-modal if using show() to open
+- in the top layer only if opened as a modal
+- cannot be lightly dismissed
+
+### Dialog element with popover api
+- behave like a popover element
+- styling and positioning may behave differently
+- useful when wanting the semantic clarity of the dialog tag, but not its behavior using the dialog api
+
+## Use cases
+Popover can be used for element that don't require the attention of the user before proceeding, but merely to give them clarification or informations, such as a tooltip, or an error message.
+
+Dialog should be used for things the user must interact with before proceeding, such as a form or disclaimer.

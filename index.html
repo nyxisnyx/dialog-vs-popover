@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body id="body">
+        <button popovertarget="first">Button popover light dismissible</button>
+        <br>
+        <br>
+        <button popovertarget="second">Button popover manual toggle</button>
+        <button popovertarget="second" popovertargetaction="show">Button popover manual show only</button>
+        <br>
+        <br>
+        <button onclick="openThird()">Button dialog as modal</button>
+        <br>
+        <br>
+        <button onclick="openFourth()">Button dialog as non modal</button>
+        <br>
+        <br>
+        <button popovertarget="fifth">Button dialog as light popover</button>
+        <br>
+        <br>
+        <button popovertarget="sixth">Button dialog as manual popover</button>
+        <br>
+        <br>
+        <button onclick="interact()">interactable ?</button>
+        <button onclick="zIndexReveal()" id="zIndexButton">the zindex square</button>
+        <div class="zIndex" id="zIndex"></div>
+        <div class="first" id="first" popover>
+            bog standard light popover
+        </div>
+        <div class="second" id="second" popover="manual">
+            bog standard manual popover
+            <button popovertarget="second" popovertargetaction="hide">Button that only close a manual popover</button>
+        </div>
+        <dialog class="third" id="third">
+            <button onclick="closeThird()">button to close a modal dialog</button>
+            <button onclick="openFourth()">Button dialog as non modal</button>
+        </dialog>
+        <dialog class="fourth" id="fourth">
+            <button onclick="closeFourth()">button to close a non modal dialog</button>
+        </dialog>
+        <dialog class="fifth" id="fifth" popover>
+            a dialog acting as a light popover
+        </dialog>
+        <dialog class="sixth" id="sixth" popover="manual">
+            a dialog acting as a manual popover
+        </dialog>
+        <script src="./script.js"></script>
+    </body>
+</html>
